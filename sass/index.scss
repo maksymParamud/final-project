@@ -79,12 +79,12 @@
 // ----------------MAIN-----------
 
 .main {
-    width: 100%;
+    max-width: 72%;
+    margin: auto;
 
     .asides {
         display: flex;
-        margin: auto;
-        max-width: 72%;
+        justify-content: center;
         margin-top: 45px;
 
         .left-aside {
@@ -147,8 +147,7 @@
     max-width: 1140px;
     min-width: 1140px;
     width: 100%;
-    margin: auto; /////////////////
-    margin-left: 150px;
+    margin: auto;
     margin-top: 100px;
     border-radius: $normalRadius;
     box-shadow: 1px 15px 20px 5px rgba(0, 0, 0, 0.144);
@@ -281,7 +280,8 @@
         display: flex;
         justify-content: space-around;
         margin: auto;
-        width: 1150px;
+        min-width: 1150px;
+        max-width: 1200px;
     
         .card-container {
             min-width: 330px;
@@ -703,11 +703,11 @@
     display: flex;
     justify-content: space-between;
     min-height: 563.12px;
-    max-width: 1440px;
     background-color: #F8F8F8;
     position: relative;
     padding-top: 225px;
     padding-left: 150px;
+    padding-right: 150px;
     z-index: 1;
     margin-top: -150px;
 
@@ -740,46 +740,31 @@
 
     .product {
         p {
-            font-size: $largeSize;
-            color: $darkBlue;
-            margin-bottom: 20px;
+            @include text-styles-color-blue;
         }
 
         .product-info {
-            color: $gray;
-            margin: 0;
-            line-height: $baseLineHeight;
-            margin-bottom: 10px;
+            @include text-styling;
         }
     }
 
     .engage {
         p {
-            font-size: $largeSize;
-            color: $darkBlue;
-            margin-bottom: 20px;
+            @include text-styles-color-blue;
         }
 
         .engage-info {
-            color: $gray;
-            margin: 0;
-            line-height: $baseLineHeight;
-            margin-bottom: 10px;
+            @include text-styling;
         }
     }
 
     .earn-money {
         p {
-            font-size: $largeSize;
-            color: $darkBlue;
-            margin-bottom: 20px;
+            @include text-styles-color-blue;
         }
 
         .earn-money-info {
-            color: $gray;
-            margin: 0;
-            line-height: $baseLineHeight;
-            margin-bottom: 10px;
+            @include text-styling;
         }
     }
 }

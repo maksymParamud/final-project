@@ -6,6 +6,7 @@ $white: #EEEFF2;
 
 
 // --------------SPACING----------------
+$baseMargin: 14px;
 $baseLineHeight: 30px;
 
 
@@ -22,3 +23,17 @@ $smallSize: 14px;
 $normalSize: 18px !default;
 $largeSize: 35px;
 $largesrSize: 50px;
+
+
+// --------------maxings----------------
+
+  @mixin text-styles-color-blue($color: $darkBlue) {
+    color: $color;
+    margin-bottom: 20px;
+  }
+
+  @mixin text-styling($color: $gray, $lineHeight: $baseLineHeight) {
+    color: $color;
+    margin: 0;
+    line-height: $lineHeight;
+  }
