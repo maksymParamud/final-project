@@ -1,4 +1,9 @@
 @media (max-width: 1024px) {
+    :root {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
     .container {
         
         // =========================== FIRST PAGE ==============================
@@ -39,5 +44,107 @@
                 }
             }
         }
+
+        // ----------------FOOTER-----------
+
+        .footer-first-page {
+            flex-direction: column;
+            align-items: start;
+            min-width: 0;
+            margin: 0;
+            margin-top: 75px;
+            padding: 0;
+
+            .after-1::after, .after-2::after {
+                display: none;
+            }
+        }
+
+
+        // ========================= SECOND PAGE ============================
+
+        .main-2 {
+            flex-direction: column;
+
+            .right-aside-2 {
+                margin: auto;
+            }
+        }
+
+
+        // ========================= THIRD PAGE ============================
+
+        .container-third-page {
+            // ----------------MAIN-------------
+
+            .main {
+                flex-direction: column;
+                position: relative;
+                margin-top: -30px;
+                min-width: 0;
+                
+                .card-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 0;
+                    max-height: none;
+                    min-height: 0px;
+                    box-sizing: border-box;
+                    width: 350px;
+                    min-width: 0;
+
+                        h2 {
+                            margin-top: 0;
+                        }
+
+                        button {
+                            margin-bottom: 15px;
+                        }
+                     }
+                }
+
+                .card-container:first-of-type {
+                    .card-main {
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+
+
+        // ========================= FOURTH PAGE ============================
+
+        .container-fourth-page {
+            .map {
+                width: 100%;
+            }
+
+            .footer {
+                .companies {
+                    width: 100%;
+                }
+            }
+        }
+
+
+        // ========================= FIFTH PAGE ============================
+
+        .container-fifth-page {
+            .main {
+                margin: 0;
+                margin-left: 5px;
+                margin-right: 5px;
+                min-width: 75%;
+            }
+        }
+
+
+        // ========================= SIXTH PAGE ============================
+
+        .container-sixth-page {
+            margin: 0;
+            padding: 10px;
+            padding-top: 75px;
+        }
     }
-}
