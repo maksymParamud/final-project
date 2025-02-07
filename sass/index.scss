@@ -46,6 +46,10 @@
     }
 }
 
+.burger-menu {
+    display: none;
+}
+
 .sign {
     display: flex;
     align-items: center;
@@ -691,6 +695,16 @@
                 background-color: $red;
                 color: white;
                 font-size: 16px;
+                box-shadow: 0px 5px 20px rgba(255, 24, 24, 0.5);
+                transition: all .25s ease;
+            }
+
+            button:hover {
+                background-color: #ca3232;
+            }
+
+            button:active {
+                background-color: #a52929;
             }
         }
    }
@@ -703,6 +717,7 @@
     display: flex;
     justify-content: space-between;
     min-height: 563.12px;
+    max-height: 563.12px;
     background-color: #F8F8F8;
     position: relative;
     padding-top: 225px;

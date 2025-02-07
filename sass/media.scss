@@ -1,0 +1,43 @@
+@media (max-width: 1024px) {
+    .container {
+        
+        // =========================== FIRST PAGE ==============================
+
+
+        // ---------------HEADER-----------
+
+        .header {
+            justify-content: space-between;
+            margin-left: 25px;
+
+            .nav {
+                .nav-list {
+                    display: none;
+                }
+
+                .burger-menu {
+                    display: block;
+                    height: 75px;
+                    margin-top: -5px;
+                }
+            }
+        }
+
+
+        // ----------------MAIN-----------
+
+        .main {
+            margin-top: 75px;
+            margin-left: 25px;
+            max-width: none;
+
+            .asides {
+                display: block;
+
+                .btn-getStarted {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}

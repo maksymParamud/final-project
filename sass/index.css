@@ -36,6 +36,10 @@
   color: rgb(0, 128, 122);
 }
 
+.burger-menu {
+  display: none;
+}
+
 .sign {
   display: flex;
   align-items: center;
@@ -549,12 +553,21 @@
   background-color: #F53838;
   color: white;
   font-size: 16px;
+  box-shadow: 0px 5px 20px rgba(255, 24, 24, 0.5);
+  transition: all 0.25s ease;
+}
+.container-fifth-page .footer .right-aside button:hover {
+  background-color: #ca3232;
+}
+.container-fifth-page .footer .right-aside button:active {
+  background-color: #a52929;
 }
 
 .container-sixth-page {
   display: flex;
   justify-content: space-between;
   min-height: 563.12px;
+  max-height: 563.12px;
   background-color: #F8F8F8;
   position: relative;
   padding-top: 225px;

@@ -1,0 +1,25 @@
+@media (max-width: 1024px) {
+  .container .header {
+    justify-content: space-between;
+    margin-left: 25px;
+  }
+  .container .header .nav .nav-list {
+    display: none;
+  }
+  .container .header .nav .burger-menu {
+    display: block;
+    height: 75px;
+    margin-top: -5px;
+  }
+  .container .main {
+    margin-top: 75px;
+    margin-left: 25px;
+    max-width: none;
+  }
+  .container .main .asides {
+    display: block;
+  }
+  .container .main .asides .btn-getStarted {
+    margin-bottom: 50px;
+  }
+}

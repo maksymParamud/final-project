@@ -5,12 +5,14 @@ $(document).ready(function() {
 
         $('.card-container').css({
             'border': '2px solid #DDDDDD',
-            'background-color': 'transparent'
+            'background-color': 'transparent',
+            
         });
 
         $('.card-footer button').css({
             'background-color': 'white',
-            'color': '#F53838'
+            'color': '#F53838',
+            'box-shadow': 'none'
         });
 
         $(this).closest('.card-container').css({
@@ -19,7 +21,8 @@ $(document).ready(function() {
 
         $(this).css({
             'background-color': '#F53838',
-            'color': 'white'
+            'color': 'white',
+            'box-shadow': '0px 5px 20px rgba(255, 24, 24, 0.5)'
         });
     });
 });
