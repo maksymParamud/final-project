@@ -113,3 +113,37 @@ $(document).ready(function () {
     arrowLeft.on("click", goLeft);
     pointsDiv.on("click", pointSlide);
 });
+
+
+// ---------------BURGER MENU--------------
+
+$(document).ready(function () {
+    $('#burger-btn').change(function() {
+
+        if ($(this).prop('checked')) {
+            if ($(".nav-burger-menu").length === 0) {
+
+                $(".burger-menu")
+
+                $(".nav-burger").append(
+                    '<ul class="nav-burger-menu">' +
+                    '<li><a href="#">About</a></li>' +
+                    '<li><a href="#">Features</a></li>' +
+                    '<li><a href="#">Pricing</a></li>' +
+                    '<li><a href="#">Testimonials</a></li>' +
+                    '<li><a href="#">Help</a></li>' +
+                    '<div class="sign">'+
+                        '<li class="Sign-in"><a href="#">Sign In</a></li>'+
+                        '<li class="Sign-up"><a class="sign-up" href="#">Sign Up</a></li>' +
+                    '</div>' +
+                    '</ul>'
+                );
+
+            }
+        } else {
+            console.log('checkBox is not clicked');
+            $(".nav-burger-menu").remove();
+        }
+
+    });
+});
