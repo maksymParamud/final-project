@@ -98,13 +98,15 @@
   .container-third-page .main {
     flex-direction: column;
     position: relative;
-    margin-top: -30px;
+    margin-top: 50px;
     min-width: 0;
   }
   .container-third-page .main .card-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: auto;
+    margin-bottom: 30px;
     padding: 0;
     max-height: none;
     min-height: 0px;
